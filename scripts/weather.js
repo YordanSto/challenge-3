@@ -47,11 +47,11 @@ function onSuccess(response) {
 	document.getElementById("logo").src='img/veilig.svg';
 	}
 
-	TweenMax.from("#location", 1, {ease:Expo.easeOut, top:800, opacity:0, scale:0});
-	TweenMax.from("#temperature", 1, {ease:Expo.easeOut, right:800, opacity:0, scale:0, delay:0.3});
-	TweenMax.from("#wind", 1, {ease:Expo.easeOut, left:800, opacity:0, scale:0, delay:0.6});
-	TweenMax.from("#clouds", 1, {ease:Expo.easeOut, right:800, opacity:0, scale:0, delay:0.9});
-	TweenMax.from("#advice", 1, {ease:Expo.easeOut, left:800, opacity:0, scale:0, delay:1.2});
+	TweenMax.from("#location", 0.5, {ease:Expo.easeOut, top:800, opacity:0, scale:0});
+	TweenMax.from("#temperature", 0.5, {ease:Expo.easeOut, right:800, opacity:0, scale:0, delay:0.3});
+	TweenMax.from("#wind", 0.5, {ease:Expo.easeOut, left:800, opacity:0, scale:0, delay:0.6});
+	TweenMax.from("#clouds", 0.5, {ease:Expo.easeOut, right:800, opacity:0, scale:0, delay:0.9});
+	TweenMax.from("#advice", 0.5, {ease:Expo.easeOut, left:800, opacity:0, scale:0, delay:1.2});
 }
 
 function onError(error) {
