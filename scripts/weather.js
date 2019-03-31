@@ -38,9 +38,9 @@ function onSuccess(response) {
 	locationDOM.innerHTML = location;
 	cloudsDOM.innerHTML = clouds + "&#37";
 	weatherDOM.innerHTML = celsius + "&#176;C"; //zorgt voor 'graden celsius' achter de temperatuur
-	windDOM.innerHTML = wind + "Km/h"; //zorgt voor km/h achter de windsnelheid
+	windDOM.innerHTML = wind + " km/h"; //zorgt voor km/h achter de windsnelheid
 
-	if (wind >= 30) {
+	if (wind >= 30 || clouds >= 30) {
 	document.getElementById("logo").src='img/onveilig.svg';
 	}
 	else {
