@@ -59,7 +59,8 @@ function onError(error) {
 	alert('Deze plaats lijkt niet te bestaan, probeer het nog eens ;)'); //geef alert weer
 }
 
-document.getElementById("search").onclick = function(){ //geeft temperatuur bij klik op id search
+document.getElementById("fixedbox").onsubmit = function(e){ //geeft temperatuur bij klik op id search
+	e.preventDefault();
 	getData();
 };
 
