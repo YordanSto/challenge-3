@@ -41,10 +41,10 @@ function onSuccess(response) {
 	windDOM.innerHTML = wind + " km/h"; //zorgt voor km/h achter de windsnelheid
 
 	if (wind >= 30 || clouds >= 30) {
-	document.getElementById("logo").src='img/onveilig.svg';
+	document.getElementById("safe").src='img/onveilig.svg';
 	}
 	else {
-	document.getElementById("logo").src='img/veilig.svg';
+	document.getElementById("safe").src='img/veilig.svg';
 	}
 
 	TweenMax.from("#location", 0.5, {ease:Expo.easeOut, top:800, opacity:0, scale:0});
